@@ -44,3 +44,18 @@
 | Data di inserimento  | Data in cui l'auto è stata inserita nel database                               |
 | Data di vendita      | Data in cui l'auto è stata venduta (se applicabile)                            |
 
+***************  BONUS  *****************
+
+
+VOGLIO RESTITUIRE I VALORI :
+ID
+MARCA
+MODELLO
+PREZZO
+DESCRIZIONE
+
+SELECT ID, MARCA, MODELLO, PREZZO, DESCRIZIONE 
+<!-- DATI DA RESTITUIRE IN COLONNE SEPARATE -->
+
+FROM car 
+<!-- NOME TABELLA DA DOVE RECUPERARE I DATI -->
