@@ -3,22 +3,6 @@
 ## DB_NAME : *car_dealer*
 - Table Name : ***Car***
 
-
-1. ID Auto (Primary Key): Un identificatore univoco per ogni auto inserita nel database.
-2. Marca: Il marchio dell'auto (es. Toyota, Ford, etc.).
-3. Modello: Il modello dell'auto (es. Corolla, Mustang, etc.).
-4. Anno di produzione: L'anno di produzione dell'auto.
-5. Chilometraggio: Il chilometraggio dell'auto.
-6. Prezzo: Il prezzo di vendita dell'auto.
-7. Colore: Il colore dell'auto.
-8. Tipo di carrozzeria: Berlina, SUV, coupé, ecc.
-9. Tipo di carburante: Benzina, Diesel, ibrido, elettrico, ecc.
-10. Descrizione: Una breve descrizione dell'auto e delle sue caratteristiche.
-11. Stato: Indica se l'auto è disponibile o già venduta.
-12. Data di inserimento: Data in cui l'auto è stata inserita nel database.
-13. Data di vendita: Data in cui l'auto è stata venduta (se applicabile).
-<!-- 14. ID Concessionario  (Foreign Key): Un riferimento all'ID del concessionario che ha inserito l'auto. -->
-
 1. ID Auto : INDEX | BIGINT | PK | NOTNULL | UNIQUE | AI 
 2. Marca : VARCHAR (20) | NULL
 3. Modello : INDEX | VARCHAR(80) | NOTNULL | DEFAULT ('N/A')
@@ -35,3 +19,28 @@
 <!-- /TwoChoices : -->
 12. Data di inserimento : DATETIME | NOT NULL
 13. Data di vendita : DATETIME | NULL
+
+              | |
+              | |
+              | |
+            \     /
+             \   /
+              \ /
+               V 
+
+| Campo                | Descrizione                                                                    |
+|----------------------|-----------------------------------------------------------------------------   |
+| ID Auto (PK)         | Identificatore univoco dell'auto                                                |    
+| Marca                | Marchio dell'auto (es. Toyota, Ford, etc.)                                     |
+| Modello              | Modello dell'auto (es. Corolla, Mustang, etc.)                                 |
+| Anno di produzione   | Anno di produzione dell'auto                                                   |
+| Chilometraggio       | Chilometraggio dell'auto                                                       |
+| Prezzo               | Prezzo di vendita dell'auto                                                    |
+| Colore               | Colore dell'auto                                                               |
+| Tipo di carrozzeria  | Tipo di carrozzeria dell'auto (Berlina, SUV, coupé, ecc.)                      |
+| Tipo di carburante   | Tipo di carburante dell'auto (Benzina, Diesel, ibrido, elettrico, ecc.)        |
+| Descrizione          | Breve descrizione dell'auto e delle sue caratteristiche                        |
+| Stato/Disponibilità  | Stato dell'auto (Disponibile, Venduta)                                         |
+| Data di inserimento  | Data in cui l'auto è stata inserita nel database                               |
+| Data di vendita      | Data in cui l'auto è stata venduta (se applicabile)                            |
+
